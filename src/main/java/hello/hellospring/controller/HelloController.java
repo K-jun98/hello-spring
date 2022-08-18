@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class HelloController {
-    @RequestMapping(method = RequestMethod.GET, path = "hello")  // GetMapping 을 주로 쓰지만 RequestMapping도 사용가능
+        @RequestMapping(method = RequestMethod.GET, path = "hello")  // GetMapping 을 주로 쓰지만 RequestMapping도 사용가능
     public String hello(Model model) {
         model.addAttribute("data", "hello!!");
         return "hello";
